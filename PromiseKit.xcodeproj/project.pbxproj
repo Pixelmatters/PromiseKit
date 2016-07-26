@@ -110,7 +110,6 @@
 		638AF8BE1B62B1AF0045C3E8 /* ABAddressBookRequestAccess+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302AC921AEF42F2001F0069 /* ABAddressBookRequestAccess+Promise.swift */; };
 		638AF8BF1B62B1AF0045C3E8 /* ALAssetsLibrary+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302AC941AEF42F2001F0069 /* ALAssetsLibrary+Promise.swift */; };
 		638AF8C11B62B1AF0045C3E8 /* AVAudioSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302AC971AEF42F2001F0069 /* AVAudioSession+AnyPromise.m */; };
-		638AF8C21B62B1AF0045C3E8 /* AVAudioSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302AC981AEF42F2001F0069 /* AVAudioSession+Promise.swift */; };
 		638AF8C41B62B1AF0045C3E8 /* CKContainer+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302AC9B1AEF42F2001F0069 /* CKContainer+AnyPromise.m */; };
 		638AF8C51B62B1AF0045C3E8 /* CKContainer+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302AC9C1AEF42F2001F0069 /* CKContainer+Promise.swift */; };
 		638AF8C71B62B1AF0045C3E8 /* CKDatabase+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302AC9E1AEF42F2001F0069 /* CKDatabase+AnyPromise.m */; };
@@ -123,7 +122,6 @@
 		638AF8D21B62B1AF0045C3E8 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302ACAA1AEF42F2001F0069 /* NSNotificationCenter+AnyPromise.m */; };
 		638AF8D31B62B1AF0045C3E8 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302ACAB1AEF42F2001F0069 /* NSNotificationCenter+Promise.swift */; };
 		638AF8D81B62B1AF0045C3E8 /* NSURLConnection+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302ACB01AEF42F2001F0069 /* NSURLConnection+AnyPromise.m */; };
-		638AF8D91B62B1AF0045C3E8 /* NSURLConnection+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302ACB11AEF42F2001F0069 /* NSURLConnection+Promise.swift */; };
 		638AF8DA1B62B1AF0045C3E8 /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306C6BA1AF6CA8500392D37 /* NSObject+Promise.swift */; };
 		638AF8DB1B62B1AF0045C3E8 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F064CA1B31C68D004EDAA1 /* NSURLSession+Promise.swift */; };
 		638AF8DD1B62B1AF0045C3E8 /* MKDirections+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302ACB41AEF42F2001F0069 /* MKDirections+AnyPromise.m */; };
@@ -327,6 +325,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 638CDF021AEE734B0023A543;
 			remoteInfo = PMKTestHost;
+		};
+		BE8123811D4779D6007EBDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63F8039A1AB87A8200E4DEE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638CDF021AEE734B0023A543;
+			remoteInfo = PMKiOSUITestsHost;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1240,6 +1245,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BE8123821D4779D6007EBDAC /* PBXTargetDependency */,
 			);
 			name = PMKTests;
 			productName = PMKTests;
@@ -1387,6 +1393,7 @@
 					};
 					6388E1A11AD315F90074D85B = {
 						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 638CDF021AEE734B0023A543;
 					};
 					638CDF021AEE734B0023A543 = {
 						CreatedOnToolsVersion = 6.3;
@@ -1395,7 +1402,6 @@
 					638E0ED41AEF16530052E28F = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0800;
-						TestTargetID = 638CDF021AEE734B0023A543;
 					};
 					63EBEAC41B6151AA0097FA42 = {
 						CreatedOnToolsVersion = 7.0;
@@ -1615,7 +1621,6 @@
 				639D55101D432CE20035D578 /* CBCentralManager+Promise.swift in Sources */,
 				638AF8BF1B62B1AF0045C3E8 /* ALAssetsLibrary+Promise.swift in Sources */,
 				638AF8C11B62B1AF0045C3E8 /* AVAudioSession+AnyPromise.m in Sources */,
-				638AF8C21B62B1AF0045C3E8 /* AVAudioSession+Promise.swift in Sources */,
 				638AF8C41B62B1AF0045C3E8 /* CKContainer+AnyPromise.m in Sources */,
 				638AF8C51B62B1AF0045C3E8 /* CKContainer+Promise.swift in Sources */,
 				638AF8C71B62B1AF0045C3E8 /* CKDatabase+AnyPromise.m in Sources */,
@@ -1630,7 +1635,6 @@
 				2F764A4D1CF6D53B00F6F7AD /* WCSession+Promise.swift in Sources */,
 				638AF8D31B62B1AF0045C3E8 /* NSNotificationCenter+Promise.swift in Sources */,
 				638AF8D81B62B1AF0045C3E8 /* NSURLConnection+AnyPromise.m in Sources */,
-				638AF8D91B62B1AF0045C3E8 /* NSURLConnection+Promise.swift in Sources */,
 				638AF8DA1B62B1AF0045C3E8 /* NSObject+Promise.swift in Sources */,
 				638AF8DB1B62B1AF0045C3E8 /* NSURLSession+Promise.swift in Sources */,
 				638AF8DD1B62B1AF0045C3E8 /* MKDirections+AnyPromise.m in Sources */,
@@ -1861,6 +1865,11 @@
 			target = 638CDF021AEE734B0023A543 /* PMKiOSUITestsHost */;
 			targetProxy = 63EBEACA1B6151AA0097FA42 /* PBXContainerItemProxy */;
 		};
+		BE8123821D4779D6007EBDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 638CDF021AEE734B0023A543 /* PMKiOSUITestsHost */;
+			targetProxy = BE8123811D4779D6007EBDAC /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -2017,6 +2026,7 @@
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = Tests/CorePromise/bridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PMKiOSUITestsHost.app/PMKiOSUITestsHost";
 			};
 			name = Debug;
 		};
@@ -2039,6 +2049,7 @@
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = Tests/CorePromise/bridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PMKiOSUITestsHost.app/PMKiOSUITestsHost";
 			};
 			name = Release;
 		};
@@ -2105,7 +2116,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Tests/Categories/bridge.h;
 				SWIFT_VERSION = 2.3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PMKiOSUITestsHost.app/PMKiOSUITestsHost";
 				WARNING_CFLAGS = "-w";
 			};
 			name = Debug;
@@ -2126,7 +2136,6 @@
 				SWIFT_OBJC_BRIDGING_HEADER = Tests/Categories/bridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 2.3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PMKiOSUITestsHost.app/PMKiOSUITestsHost";
 				WARNING_CFLAGS = "-w";
 			};
 			name = Release;

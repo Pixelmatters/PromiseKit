@@ -29,3 +29,10 @@ func swizzle(foo: AnyClass, _ from: Selector, isClassMethod: Bool = false, @noes
     body()
     method_exchangeImplementations(swizzledMethod, originalMethod)
 }
+
+import Foundation.NSProcessInfo
+
+func travis() -> Bool {
+    let env = NSProcessInfo.processInfo().environment
+    return env["CI"] == "true" && env["TRAVIS"] == "true"
+}

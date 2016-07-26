@@ -43,15 +43,15 @@ private class PMKMessageComposeViewControllerDelegate: NSObject, MFMessageCompos
         defer { retainCycle = nil }
 
         switch result.rawValue {
-        case MessageComposeResultSent.rawValue:
-            fulfill()
-        case MessageComposeResultFailed.rawValue:
-            var info = [NSObject: AnyObject]()
-            info[NSLocalizedDescriptionKey] = "The attempt to save or send the message was unsuccessful."
-            info[NSUnderlyingErrorKey] = NSNumber(unsignedInt: result.rawValue)
-            reject(NSError(domain: PMKErrorDomain, code: PMKOperationFailed, userInfo: info))
-        case MessageComposeResultCancelled.rawValue:
-            reject(MFMessageComposeViewController.Error.Cancelled)
+//        case MessageComposeResultSent.rawValue:
+//            fulfill()
+//        case MessageComposeResultFailed.rawValue:
+//            var info = [NSObject: AnyObject]()
+//            info[NSLocalizedDescriptionKey] = "The attempt to save or send the message was unsuccessful."
+//            info[NSUnderlyingErrorKey] = NSNumber(unsignedInt: result.rawValue)
+//            reject(NSError(domain: PMKErrorDomain, code: PMKOperationFailed, userInfo: info))
+//        case MessageComposeResultCancelled.rawValue:
+//            reject(MFMessageComposeViewController.Error.Cancelled)
         default:
             fatalError("Swift Sucks")
         }

@@ -51,13 +51,13 @@ private class PMKMailComposeViewControllerDelegate: NSObject, MFMailComposeViewC
             reject(error)
         } else {
             switch result.rawValue {
-            case MFMailComposeResultFailed.rawValue:
-                var info = [NSObject: AnyObject]()
-                info[NSLocalizedDescriptionKey] = "The attempt to save or send the message was unsuccessful."
-                info[NSUnderlyingErrorKey] = NSNumber(unsignedInt: result.rawValue)
-                reject(NSError(domain: PMKErrorDomain, code: PMKOperationFailed, userInfo: info))
-            case MFMailComposeResultCancelled.rawValue:
-                reject(MFMailComposeViewController.Error.Cancelled)
+//            case MFMailComposeResultFailed.rawValue:
+//                var info = [NSObject: AnyObject]()
+//                info[NSLocalizedDescriptionKey] = "The attempt to save or send the message was unsuccessful."
+//                info[NSUnderlyingErrorKey] = NSNumber(unsignedInt: result.rawValue)
+//                reject(NSError(domain: PMKErrorDomain, code: PMKOperationFailed, userInfo: info))
+//            case MFMailComposeResultCancelled.rawValue:
+//                reject(MFMailComposeViewController.Error.Cancelled)
             default:
                 fulfill(result)
             }
